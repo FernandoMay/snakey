@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Snake Game</title>
-	<link rel="stylesheet" href="style.css">
+  <title>Snake Game — snakey</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="game-container">
-		<canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
-	</div>
-	<div class="keys">
-	  <a class="up arr" onclick="Snake.action('up')">
-	    <i class="chevron up"></i></a>
-	  <br />
-	  <a class="left arr" onclick="Snake.action('left')">
-	    <i class="chevron left"></i></a>
-	  <a class="down arr" onclick="Snake.action('down')">
-	    <i class="chevron down"></i></a>
-	  <a class="right arr" onclick="Snake.action('right')">
-	    <i class="chevron right"></i></a>
-	</div>
-	<script type="text/javascript" src="game.js"></script>
+  <div id="game-container">
+    <canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
+  </div>
+  <div class="keys">
+    <a class="up arr" data-action="up">
+      <i class="chevron up"></i></a>
+    <br />
+    <a class="left arr" data-action="left">
+      <i class="chevron left"></i></a>
+    <a class="down arr" data-action="down">
+      <i class="chevron down"></i></a>
+    <a class="right arr" data-action="right">
+      <i class="chevron right"></i></a>
+  </div>
+  <p class="hint">Arrow keys to move · ESC to restart</p>
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>
